@@ -4,6 +4,7 @@ using System.IO;
 using System.Runtime.Serialization;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Xml.Serialization;
+using Android.Graphics;
 using Newtonsoft.Json;
 
 namespace Oef.Util
@@ -69,20 +70,20 @@ namespace Oef.Util
             }
         }
         
-        private static byte[] BitmapToByteArray(Bitmap bitmap)
-        {
-            byte[] result = null;
+        //private static byte[] BitmapToByteArray(Bitmap bitmap)///System.Drawing.
+        //{
+        //    byte[] result = null;
 
-            if (bitmap != null)
-            {
-                using (var stream = new MemoryStream())
-                {
-                    bitmap.Save(stream, bitmap.RawFormat);
-                    result = stream.ToArray();
-                }
-            }
+        //    if (bitmap != null)
+        //    {
+        //        using (var stream = new MemoryStream())
+        //        {
+        //            bitmap.Compress(Bitmap.CompressFormat.Png,70,stream);///(stream, bitmap.RawFormat
+        //            result = stream.ToArray();
+        //        }
+        //    }
             
-            return result;
-        }
+        //    return result;
+        //}
     }
 }

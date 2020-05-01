@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
+//using Android.Graphics;
 using System.Linq;
 
 namespace Oef
@@ -113,7 +114,7 @@ namespace Oef
 
         public string Text { get; set; }
 
-        public Android.Graphics.Bitmap Image { get; set; }
+        public Bitmap Image { get; set; }
 
         public char Answer { get; set; }
 
